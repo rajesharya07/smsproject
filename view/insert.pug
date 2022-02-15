@@ -1,0 +1,29 @@
+extends layout.pug 
+
+block head 
+    title Insert
+    
+block content
+   .container.mt-5 
+           .row 
+               .col-lg-6.mx-auto 
+                     .card 
+                        .card-body 
+                            form(action="",method="post")
+                                .mb-3 
+                                    label(for="") Name 
+                                    input(type="type",placeholder="Enter your name").form-control
+                                .mb-3 
+                                    label(for="") Email 
+                                    input(type="type",placeholder="Enter your Email").form-control
+                                .mb-3 
+                                    label(for="") Contact 
+                                    input(type="type",placeholder="Enter your Contact").form-control
+                                .mb-3 
+                                    label(for="") School 
+                                    input(type="type",placeholder="Enter your School").form-control
+                                .mb-3 
+                                    label(for="") Class 
+                                    input(type="type",placeholder="Enter your Class").form-control
+                                .mb-3 
+                                    input(type="submit",value="Send").btn.btn-success.w-100
